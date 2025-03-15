@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background & Font Size</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Change Background Color & Font Size</h1>
+    <label for="colorInput">Enter Color:</label>
+    <input type="text" id="colorInput" placeholder="e.g., red or #ff0000">
+    <button onclick="changeColor()">Apply Color</button>
+    
+    <br>
+    
+    <button onclick="increaseFontSize()">Increase Font Size</button>
+
+    <script>
+        function changeColor() {
+            let userColor = document.getElementById("colorInput").value;
+            document.body.style.backgroundColor = userColor;
+        }
+
+        function increaseFontSize() {
+            let currentSize = parseInt(window.getComputedStyle(document.body).fontSize);
+            document.body.style.fontSize = (currentSize + 2) + "px";
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+<div style="text-align:centre;margin-top:40px;"><img style="width:50%;" src="C:\Users\dell\Downloads\WhatsApp Image 2025-03-14 at 19.34.16.jpeg"></div>  
+<h1 style="font-size:45px; text-align:centre;">Turning vision into impact</h1>
+<h1 style="font-size:55px; text-align:centre;">I m Nicole R. Dabre</h1>
+ <h2 style="text-align:centre;"> An aspiring Engineer. </h2>
+<h2 style="text-align:centre;"> Bookworm,Poem Writer,Enthusiast Dancer,Singer</h2> 
+<p style="font-size:35px; line-height:40px; margin-botton:60px;"> I'm curently pursuing my B.Tech Degree from FR.Conceiacao Rodrigues College of Engineering,Bandra(W).I'm in second semester currently.I'm very much keen to complete my degree and enter as full-feldged software developer in IT sector.<br>As of now I'm focusing on my tech skills that is coding. Also I'm learning Java apparently with the help of resources available on internet.<br> I'm a Genz who beleives in HARDWORK over LUCK & I'm also good at delivering my opinions effectively.</p>
+<div style="text-align:centre;">
+<a style="font-size:30px;background-color:#FF00FF;padding:20px 30px 20px 30px;color:#00FFFF;" href="https://www.instagram.com/nicole12dabre/profilecard/?igsh=MW5odTl2MW05ajg1cQ=="> Social Media </a>
+</div>
+<hr>
+<h2 style="font-size:40;text-align:centre;"> This is who I am.</h2> 
+<img style="width:33%" src="C:\Users\dell\Downloads\WhatsApp Image 2025-03-14 at 18.18.52.jpeg">
+<img style="width:33%" src="C:\Users\dell\Downloads\WhatsApp Image 2025-03-14 at 18.07.56.jpeg">
+<img style="width:33%" src="C:\Users\dell\Downloads\WhatsApp Image 2025-03-14 at 19.15.42.jpeg">
+<hr>
+<p style="font-size:35px;line-height:40px;"> Below are some of the pictures of my hobbies:<br> 1.I love to read crime thriller fiction as it gives me boost to stay away from unnecessary distractions.<br> 2.Also one of my poem that that I have written when I was teenager.<br>All my interests keep me hooked up and gives me peace and ease.</p>
+<img style="width:45%;" src="C:\Users\dell\Downloads\WhatsApp Image 2025-03-14 at 19.59.09.jpeg">
+<img style="width:45%;" src="C:\Users\dell\Downloads\WhatsApp Image 2025-03-14 at 19.58.30.jpeg">
+<hr>
+<p style="font-size:35px;line-height:40px;">Some of the movies which made me love my life more than I used to previously are recommended as follows:</p>
+<img style="width:45%;" src="C:\Users\dell\Downloads\WhatsApp Image 2025-03-14 at 21.57.07 (2).jpeg">
+<img style="width:45%;" src="C:\Users\dell\Downloads\WhatsApp Image 2025-03-14 at 21.57.08.jpeg">
+<img style="width:45%;" src="C:\Users\dell\Downloads\WhatsApp Image 2025-03-14 at 21.57.07 (1).jpeg">
+<img style="width:45%;" src="C:\Users\dell\Downloads\WhatsApp Image 2025-03-14 at 21.57.07.jpeg">
+<p style="font-size:35px;"> This movies shaped my personality to be more optimistic and understand that life has planned more beautiful things, so acceptance and being happy in present is more important. </p>
+<hr>
+<p style="font-size:35px;text-align:centre;"> MY PROGRESS OVER YEARS</p>
+<img style="width:100%;" src="C:\Users\dell\Downloads\WhatsApp Image 2025-03-14 at 21.41.36.jpeg">
+<hr>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect - Facts About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 50px;
+        }
+        .fact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .fact {
+            width: 350px;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .fact::before {
+            content: "Hover to reveal";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #444;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s;
+        }
+        .fact:hover::before {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Hover Over the Boxes to Reveal Facts About Me</h2>
+
+    <div class="fact-container">
+        <div class="fact">In my free time, I love to watch space-related YouTube videos.</div>
+        <div class="fact">I can stay in nature longer than at my home.</div>
+        <div class="fact">I can stay hungry without a sip of water for 12 hours.</div>
+        <div class="fact">I had read two books once in a day.</div>
+        <div class="fact">I am a feminist.</div>
+    </div>
+
+</body>
+</html>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Reveal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+            font-size: 24px; /* Bigger font size */
+            font-weight: bold;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 20px; /* Bigger button text */
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Languages I Can Speak</h2>
+    <button onclick="toggleContent()">Click to Reveal</button>
+    
+    <div class="content" id="languageList">
+        <p>1. English</p>
+        <p>2. Marathi</p>
+        <p>3. Hindi</p>
+        <p>4. Broken Sanskrit</p>
+        <p>5. My mother tongue (Kadodi)</p>
+    </div>
+
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("languageList");
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+        p {
+            font-size: 24px;
+            color: #555;
+        }
+        textarea {
+            width: 80%;
+            height: 150px;
+            font-size: 18px;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            font-size: 24px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>We Value Your Feedback!</h1>
+    <p>Please share your positive thoughts and suggestions for improvement.</p>
+    
+    <textarea placeholder="Write your feedback here..."></textarea><br>
+    <button onclick="thankUser()">Submit Feedback</button>
+
+    <p id="thank-you" style="display:none; font-size: 28px; color: #007bff; margin-top: 20px;">Thank you for visiting and sharing your thoughts!</p>
+
+    <script>
+        function thankUser() {
+            document.getElementById('thank-you').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+
+    
+
